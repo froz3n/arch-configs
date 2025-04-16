@@ -6,7 +6,18 @@ pkgdesc="Desktop environment agnostic Flathub software center"
 arch=('any')
 url="https://github.com/GloriousEggroll/flatpost"
 license=('BSD-2-Clause')
-depends=('python' 'python-gobject' 'python-requests' 'python-pillow' 'python-svgwrite' 'python-fonttools' 'python-numpy' 'flatpak' 'glib2' 'gtk3' 'gtk4' 'xdg-utils')
+depends=(
+	'appstream'
+	'flatpak'
+	'gdk-pixbuf2'
+	'glib2'
+	'gtk3'
+	'hicolor-icon-theme'
+	'python'
+	'python-dbus'
+	'python-gobject'
+	'python-requests'
+)
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/${pkgver}.tar.gz")
 sha256sums=('bc3e715092b173fb642ecdae253c15a2c89ef86e649afea5491e116ee22e419f')
 
