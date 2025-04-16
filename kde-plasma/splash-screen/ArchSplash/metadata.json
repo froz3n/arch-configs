@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "shade"
+            }
+        ],
+        "Category": "",
+        "Description": "Arch splash made from Breeze",
+        "Id": "ArchSplash",
+        "License": "GPLv3",
+        "Name": "ArchSplash",
+        "Website": ""
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "X-Plasma-APIVersion": "2"
+}
+
