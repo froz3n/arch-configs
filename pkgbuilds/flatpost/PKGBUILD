@@ -1,0 +1,21 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Froz3n <email>
+pkgname=flatpost
+pkgver=1.0.3
+pkgrel=1
+pkgdesc="Desktop environment agnostic Flathub software center"
+arch=('any')
+url="https://github.com/GloriousEggroll/flatpost"
+license=('BSD-2-Clause')
+depends=('python' 'python-gobject' 'python-requests' 'python-pillow' 'python-svgwrite' 'python-fonttools' 'python-numpy' 'flatpak' 'glib2' 'gtk3' 'gtk4' 'xdg-utils')
+source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/${pkgver}.tar.gz")
+sha256sums=('bc3e715092b173fb642ecdae253c15a2c89ef86e649afea5491e116ee22e419f')
+
+package() {
+	cd "$pkgname-$pkgver"
+	make DESTDIR="$pkgdir" install
+}
