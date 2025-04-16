@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = grub
+[Action]
+Description = Warn user to edit config on grub update because of the custom btrfs layout
+When = PostTransaction
+Exec = /usr/bin/bash -c "/usr/bin/echo -e '\e[031m Don\`t forget to REMOVE rootflags=subvol=\${rootsubvol} from /etc/grub.d/10_linux and /etc/grub.d/20_linux_xen '"

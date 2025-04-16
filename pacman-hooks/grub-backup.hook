@@ -1,0 +1,8 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = grub
+[Action]
+Description = Backup for grub update because of the custom btrfs layout
+When = PreTransaction
+Exec = /usr/bin/bash -c "/usr/bin/cp /etc/grub.d/10_linux /etc/grub.d/10_linux.pacsave&&/usr/bin/cp /etc/grub.d/20_linux_xen /etc/grub.d/20_linux_xen.pacsave"
