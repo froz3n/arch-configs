@@ -1,6 +1,6 @@
 pkgbase = flatpost
 	pkgdesc = Desktop environment agnostic Flathub software center
-	pkgver = 1.0.3
+	pkgver = 1.0.4
 	pkgrel = 1
 	url = https://github.com/GloriousEggroll/flatpost
 	arch = any
@@ -15,7 +15,7 @@ pkgbase = flatpost
 	depends = python-dbus
 	depends = python-gobject
 	depends = python-requests
-	source = flatpost-1.0.3.tar.gz::https://github.com/GloriousEggroll/flatpost/archive/1.0.3.tar.gz
-	sha256sums = bc3e715092b173fb642ecdae253c15a2c89ef86e649afea5491e116ee22e419f
+	source = flatpost-1.0.4.tar.gz::https://github.com/GloriousEggroll/flatpost/archive/1.0.4.tar.gz
+	sha256sums = 8e9a745d68c4bb64548d6bdc9e7fe80c1cd90f1e658af8e99b3a7f163de5a2f5
 
 pkgname = flatpost
